@@ -4,12 +4,8 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.CyclicBarrier;
 
 public class Car implements Runnable {
-    private static int CARS_COUNT;
+    private static int CARS_COUNT = 0;
     private static boolean winner;
-
-    static {
-        CARS_COUNT = 0;
-    }
 
     private final Race race;
     private final int speed;
